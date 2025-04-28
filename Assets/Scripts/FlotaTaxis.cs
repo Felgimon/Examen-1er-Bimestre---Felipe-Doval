@@ -14,7 +14,7 @@ public class FlotaTaxis : MonoBehaviour
     private int cantLitrosDia;
     private float precioTotal;
     private int cantLitrosTotales;
-    private float descuento = .8f;
+    private float descuento = .2f;
 
     void Start()
     {
