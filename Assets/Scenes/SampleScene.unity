@@ -141,6 +141,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b13c2be363dfa24bba1f0a43677d3c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flotaCant: 4
+  dias: 5
 --- !u!4 &442269479
 Transform:
   m_ObjectHideFlags: 0
