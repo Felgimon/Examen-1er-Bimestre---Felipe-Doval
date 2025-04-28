@@ -22,12 +22,12 @@ public class FlotaTaxis : MonoBehaviour
         if (flotaCant < 0 || dias < 0) // Si la flota es menor a 0 o si los dias son menores a 0
         {
             Debug.Log("Ambos valores tienen que ser igual o mayor que 0"); 
-            return;
+            return; //Se para de correr la funcion
         }
         if (dias < 5)
         {
             Debug.Log("La cantidad de dias no puede ser menor a 5"); // Si los dias son menores a 5
-            return;
+            return; //Se para de correr la funcion
         }
         cantLitrosDia = flotaCant * cantLitroPorUnidad; // La cantidad de litros que consume la flota por dia 
         cantLitrosTotales = cantLitrosDia * dias; // Multiplico lo que consume de litros la flota en un dia por la cantidad de dias que puso el usuario
@@ -36,11 +36,11 @@ public class FlotaTaxis : MonoBehaviour
         if (cantLitrosTotales >= 100) // Si la cantidad de litros totales son iguales o mayores a 100 litros entonces se aplica un descuento del 20%
         {
             precioTotal = precioTotal - (precioTotal * descuento); // precio total con el descuento aplicado
-            Debug.Log("Una flota de " + flotaCant + " unidades trabajando durante " + dias + " días implicará un gasto de " + precioTotal + " pesos sumado a un descuento de " + descuento + " en concepto del combustible total: " + cantLitrosTotales);
-            return;
+            Debug.Log("Una flota de " + flotaCant + " unidades trabajando durante " + dias + " días implicará un gasto de " + precioTotal + " pesos sumado a un descuento de " + descuento + " en concepto del combustible total: " + cantLitrosTotales); // En caso de descuento
+            return; //Se para de correr la funcion
         }
 
-        Debug.Log("Una flota de " + flotaCant + " unidades trabajando durante " + dias + " días implicará un gasto de " + precioTotal + " pesos en concepto del combustible");
+        Debug.Log("Una flota de " + flotaCant + " unidades trabajando durante " + dias + " días implicará un gasto de " + precioTotal + " pesos en concepto del combustible"); //En caso de no descuento
 
     }
 
